@@ -7,6 +7,14 @@ This script provides a Python interface to manage user identity events for Passi
 - Python 3.x
 - `requests` library (install via `pip install requests`)
 
+### Configuration Process in Cisco ISE-PIC: API Providers
+The API Providers feature in Cisco ISE-PIC enables you to push user identity information from your customized program or from the terminal server (TS)-Agent to the built-in ISE-PIC REST API service. Follow these steps to activate the REST service in ISE-PIC:
+
+1. **Configure the client side**: For more information, see the client user documentation.
+2. **Ensure DNS configuration**: Configure the DNS server, including reverse lookup for the client machine from ISE-PIC.
+3. **Configure a Bridge to the ISE-PIC REST Service for Passive Identity Services**: Add the client details in the API Providers settings.
+4. **Generate an authentication token**: Send add and remove requests to the API service.
+
 ## Usage
 
 1. Clone or download the script to your local machine.
